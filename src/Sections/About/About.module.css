@@ -1,0 +1,115 @@
+.MainCont {
+  min-height: 100vh;
+  width: 100%;
+}
+.CardCont {
+  display: flex;
+  gap: 20px;
+}
+.Cards {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.CardsText {
+  width: 45%;
+  align-items: center;
+  padding-top: 140px;
+  transform: translateX(50%);
+}
+.CardsText h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.4%;
+  font-family: "Reey-Regular";
+  font-style: italic;
+  font-size: 40px;
+}
+@font-face {
+  font-family: "Reey-Regular";
+  src: url("./Assets/reey/Reey-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+.CardsText p {
+  width: 145%;
+  display: flex;
+  text-align: left;
+  padding-top: 1.4%;
+  font-size: 24px;
+  font-style: italic;
+}
+.SubHeading {
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  padding-left: 30%;
+}
+.SubHeading h2 {
+  margin-top: 7%;
+  font-size: 24px;
+  color: #2a2d32;
+  text-align: center;
+}
+.SubHeading h3 {
+  width: 40%;
+  padding-left: 30%;
+  margin-top: 3%;
+  font-size: 24px;
+  color: #2a2d32;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+@media (max-width: 768px) {
+  .CardCont {
+    flex-direction: column;
+    gap: 30px; 
+  }
+
+  .Cards {
+    margin: -70px 0; 
+  }
+
+  .CardsText h1 {
+    font-size: 28px;
+  }
+
+  .CardsText p {
+    font-size: 16px;
+  }
+
+  .SubHeading {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  .SubHeading h2 {
+    font-size: 18px;
+    margin-top: 110px;
+  }
+
+  .SubHeading h3 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .CardsText h1 {
+    font-size: 24px;
+  }
+
+  .CardsText p {
+    font-size: 18px;
+  }
+
+  .SubHeading h2 {
+    font-size: 16px;
+  }
+
+  .SubHeading h3 {
+    font-size: 18px;
+  }
+}

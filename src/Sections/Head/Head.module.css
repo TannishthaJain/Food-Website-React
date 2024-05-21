@@ -1,0 +1,180 @@
+.MainCont {
+  background-image: url("./Assets/HeaderBackground.png");
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+@font-face {
+  font-family: 'Reey-Regular';
+  src: url('./Assets/reey/Reey-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.largePlate {
+  position: absolute;
+  top: 14%;
+  right: 5%;
+}
+
+.smallPlate {
+  position: absolute;
+  bottom: 3%;
+  right: 31%;
+}
+
+.leaves {
+  position: absolute;
+  bottom: -15%;
+  right: 0%;
+}
+
+.Content {
+  width: 40%;
+  padding: 6% 0 0 8%;
+  color: white;
+}
+
+.Logo {
+  margin-left: -300px;
+  margin-top: -70px;
+  margin-bottom: 14%;
+  scale: 0.6;
+}
+
+.Content > h1 {
+  margin-block: 9% 7%;
+  letter-spacing: 4px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 120px;
+  font-family: 'Reey-Regular';
+}
+
+.Content > h3 {
+  margin-block: 9% 7%;
+  letter-spacing: 4px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.waveButton {
+  position: relative;
+  border-radius: 20px;
+  background-color: #fff;
+  border: none;
+  color: #292c31;
+  padding: 8px 5%;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  overflow: hidden;
+  display: inline-flex;
+}
+
+.waveLetter {
+  display: inline-block;
+  transition: transform 0.1s ease;
+}
+
+.waveButton:hover .waveLetter {
+  animation: wave 0.1s ease forwards;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.waveButton:hover .waveLetter {
+  animation: wave 0.6s ease forwards;
+  animation-delay: calc(var(--index) * 0.05s);
+}
+
+.Content > p {
+  width: 93%;
+  font-style: italic;
+  text-align: left;
+  font-size: 19px;
+}
+
+@media (max-width: 768px) {
+  .largePlate, .smallPlate, .leaves {
+    display: none; 
+  }
+
+  .Content {
+    width: 90%;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  .Logo {
+    margin: 0 auto 20px;
+    transform: scale(0.8);
+  }
+
+  .Content > h1 {
+    margin-block: 20px;
+    font-size: 48px;
+  }
+
+  .Content > h3 {
+    margin-block: 20px;
+    font-size: 24px;
+  }
+
+  .waveButton {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  .Content > p {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Content {
+    width: 80%;
+    padding: 25px;
+  }
+
+  .Logo {
+    width: 1px; 
+    margin-left: -20px;
+    margin-top: -70px;
+    scale: 0.4;
+  }
+
+  .Content > h1 {
+    font-size: 36px;
+  }
+
+  .Content > h3 {
+    font-size: 20px;
+  }
+
+  .waveButton {
+    font-size: 14px;
+  }
+
+  .Content > p {
+    font-size: 16px;
+  }
+}
+

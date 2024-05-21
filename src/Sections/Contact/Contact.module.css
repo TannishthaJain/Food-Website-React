@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  height: 50vh;
+  width: 90%;
+  margin-top: 10%;
+  padding: 20px;
+  position: relative;
+}
+.Cont {
+  margin: 0 120px;
+  text-align: left;
+  width: 40%;
+}
+.section {
+  flex: 1;
+  margin: 0 20px;
+  text-align: left;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 57%;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 30px;
+}
+
+.icon {
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+.sectionTitle {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .Cont,
+  .section {
+    width: 90%;
+    margin: 15px 0;
+  }
+
+  .title,
+  .sectionTitle {
+    font-size: 1.8em;
+  }
+
+  .text,
+  .list li {
+    font-size: 1.3em;
+  }
+
+  .icon {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Cont,
+  .section {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .title,
+  .sectionTitle {
+    font-size: 1.5em;
+  }
+
+  .text,
+  .list li {
+    font-size: 1em;
+  }
+
+  .icon {
+    font-size: 1.5em;
+  }
+}

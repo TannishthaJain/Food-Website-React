@@ -1,0 +1,103 @@
+.MainCont {
+  min-height: 70vh;
+  width: 100%;
+  background-color: #1f2428;
+}
+@font-face {
+  font-family: "Reey-Regular";
+  src: url("./Assets/reey/Reey-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.4%;
+  font-family: "Reey-Regular";
+  letter-spacing: 4px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+.Button {
+  position: relative;
+  border-radius: 20px;
+  background-color: #e8e9ea;
+  border: none;
+  color: #292c31;
+  padding: 8px 5%;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  overflow: hidden;
+  margin-block: 3%;
+}
+.SubHeading {
+  flex-direction: column;
+  margin-top: 50px;
+  width: 40%;
+}
+.SubHeading > p {
+  width: 76%;
+  margin-top: 1%;
+  font-size: 20px;
+  color: white;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+.TextCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .TextCont {
+    flex-direction: column;
+  }
+  .SubHeading {
+    width: 80%;
+  }
+
+  .SubHeading > p {
+    font-size: 18px;
+  }
+
+  .Title {
+    font-size: 20px;
+  }
+
+  .Button {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .TextCont {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .SubHeading {
+    width: 90%;
+  }
+
+  .SubHeading > p {
+    font-size: 16px;
+    padding-left: 30px;
+  }
+
+  .Title {
+    font-size: 20px;
+    padding-left: 35px;
+    padding-top: 20px;
+  }
+
+  .Button {
+    font-size: 16px;
+  }
+}
